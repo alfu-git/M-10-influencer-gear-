@@ -1,0 +1,51 @@
+/* shared style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+:root{
+  --primary-color: #3A3A3A;
+  --h3-color: #18191F;
+  --h4-color: rgba(0, 0, 0, 0.87);
+  --card-p: #787885;
+  --btn-color: #E02C6D;
+}
+
+h1, h2, h3, h4, h5, h6{
+  line-height: normal;
+}
+
+.text-center{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
