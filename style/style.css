@@ -49,3 +49,252 @@ img{
 .grid{
   display: grid;
 }
+
+/* header section */
+section.header{
+  margin-top: 87px;
+}
+
+section.header nav{
+  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.header nav p{
+  color: var(--primary-color);
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+section.header nav p:hover{
+  color: #E02C6D;
+}
+
+section.header nav ul{
+  gap: 34px;
+  align-items: center;
+}
+
+section.header nav ul li:hover a{
+  color: #E02C6D;
+}
+
+section.header nav ul li:nth-last-child(-n+2) a:hover{
+  color: #E02C6D;
+}
+
+section.header nav ul li a{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+section.header nav ul li:nth-last-child(-n+2) a{
+  color: #000000;
+}
+
+section.header nav ul li:nth-last-child(2) a{
+  font-size: 1.2em;
+}
+section.header nav ul li:nth-last-child(1) a{
+  font-size: 1.8em;
+}
+
+.hero-area{
+  gap: 130px;
+}
+
+.hero-area .hero-area-dt{
+  width: 582px;
+  align-content: center;
+}
+
+.hero-area .hero-area-dt h1{
+  color: var(--primary-color);
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.hero-area .hero-area-dt p{
+  margin-top: 16px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.hero-area .hero-area-dt span{
+  margin-top: 26px;
+  display: inline-block;
+}
+
+.hero-area .hero-area-dt span a{
+  padding: 10px 24px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 41px;
+}
+
+.hero-area .hero-area-dt span a:hover{
+  background-color: #0f172a;
+  box-shadow: 0 1px 25px 1px #0f172a;
+}
+
+.hero-area .hero-area-img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-area .hero-area-img .bg{
+  position: absolute;
+  object-fit: contain;
+}
+
+.hero-area .hero-area-img .camera{
+  position:relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .container{
+    padding: 0 30px;
+  }
+
+  section.header{
+    margin-top: 40px;
+  }
+
+  section.header nav{
+    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.header nav p{
+    font-size: 1.3em;
+  }
+
+  section.header nav ul{
+    gap: 20px;
+    background-color: #0f172a;
+    padding: 4px 20px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  section.header nav ul li a{
+    color: rgb(237, 237, 237);
+    font-weight: 500;
+    font-size: 14px;
+   }
+
+  section.header nav ul li:nth-last-child(-n+2) a{
+    font-weight: 500;
+    color: rgb(237, 237, 237);
+  }
+
+  section.header nav ul li:nth-last-child(1) a{
+    font-size: 1.2em;
+  }
+
+  .hero-area{
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .hero-area .hero-area-dt{
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-area .hero-area-dt h1{
+    font-size: 2.2em;
+  }
+
+  .hero-area .hero-area-dt p{
+    font-size: 14px;
+  }
+
+  .hero-area .hero-area-dt span a{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .hero-area .hero-area-img .bg{
+    width: 90%;
+  }
+
+  .hero-area .hero-area-img .camera{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container{
+    padding: 0 30px;
+  }
+
+  section.header{
+    margin-top: 40px;
+  }
+
+  section.header nav{
+    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.header nav ul{
+    background-color: #0f172a;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 20px;
+    gap: 50px;
+  }
+
+  section.header nav ul li a{
+    color: rgb(237, 237, 237);
+   }
+
+  section.header nav ul li:nth-last-child(-n+2) a{
+    color: rgb(237, 237, 237);
+  }
+
+  .hero-area{
+    flex-direction: column;
+    gap: 110px;
+  }
+
+  .hero-area .hero-area-dt{
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-area .hero-area-dt h1{
+    font-size: 2.7em;
+  }
+
+  .hero-area .hero-area-img .bg{
+    width: 70%;
+  }
+
+  .hero-area .hero-area-img .camera{
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  section.header{
+    margin-top: 40px;
+  }
+
+  .hero-area{
+    gap: 70px;
+  }
+
+  .hero-area .hero-area-dt h1{
+    font-size: 2.8em;
+  }
+}
